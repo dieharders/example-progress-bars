@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+/* Resets */
+* {
+    -webkit-transition: all 0.15s ease-out;
+	-moz-transition: all 0.15s ease-out;
+	-ms-transition: all 0.15s ease-out;
+	-o-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+}
+html {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(87, 87, 87);
+}
+body {
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    display: inline-block;
+    margin: 12px;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 32pt;
+    font-weight: bold;
+}
+a {
+    color: rgb(49, 46, 253);
+}
+a:hover {
+    color: rgb(255, 255, 255);
+}
+.title {
+    display: block;
+    position: relative;
+    height: auto;
+    margin: 0;
+    width: auto;
+    color: rgb(240, 240, 240);
+    padding: 8px;
+    padding-left: 18px;
+    padding-top: 18px;
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 14pt;
+    overflow: hidden;
+    /* background by SVGBackgrounds.com */
+    background-color: #00b7ff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='827' height='689.2' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: auto auto;
+    -webkit-animation:100s scroll infinite linear;
+    -moz-animation:100s scroll infinite linear;
+    -o-animation:100s scroll infinite linear;
+    -ms-animation:100s scroll infinite linear;
+    animation:100s scroll infinite linear;
+}
+/* Be sure background-pos y is equal to background image height to prevent hitching in anim loop */
+@-webkit-keyframes scroll{
+    100%{
+        background-position:0px 1904px;
+    }
+}
+@-moz-keyframes scroll{
+    100%{
+        background-position:0px 1904px;
+    }
+}
+@-o-keyframes scroll{
+    100%{
+        background-position:0px 1904px;
+    }
+}
+@-ms-keyframes scroll{
+    100%{
+        background-position:0px 1904px;
+    }
+} 
+@keyframes scroll{
+    100%{
+        background-position:0px 1904px;
+    }
+}
+.info {
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+    color: rgb(240, 240, 240);
+}
+.plate {
+    display: inline-block;
+    position: relative;
+    color: rgb(8, 8, 8);
+    background-color: rgba(255, 193, 59, 0.85);
+    border-radius:  4px;
+    overflow: hidden;
+    margin: 4px;
+    padding: 6px;
+}
+button {
+    display: inline-block;
+    position: relative;
+    width: auto;
+    margin: 6px;
+    padding: 6px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 9pt;
+    background-color: rgb(238, 238, 238);
+    border-style: none;
+    outline: 0;
+    text-decoration: none;
+    border-radius:  4px;
+    overflow: hidden;
+
+	-webkit-transition: all 0.25s ease-in;
+	-moz-transition: all 0.25s ease-in;
+	-ms-transition: all 0.25s ease-in;
+	-o-transition: all 0.25s ease-in;
+	transition: all 0.25s ease-in;
+}
+button:hover {
+    background-color: #d8d8d8;
+    cursor: pointer;
+}
+/*********************************************************/
+#app {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template:
+        'x x x'
+        '. . .';
+    grid-gap: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 66%;
+    height: auto;
+    margin: auto;
+    padding: 18px;
+    box-sizing: border-box;
+}
+/* Name of Stat */
+.barTitle {
+    display: block;
+    margin: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    color: rgb(211, 211, 211);
+    font-size: 12pt;
+    text-align: center;
+    overflow: hidden;
+    word-wrap: none;
+    white-space: nowrap;
+}
+/* Stat value text */
+.barPercentText {
+    display: block;
+    width: 48px;
+    margin: auto;
+    margin-right: 0px;
+    color: rgb(211, 211, 211);
+    font-size: 10pt;
+    text-align: right;
+}
+/* Stat container*/
+.statContainer {
+    display: block;
+    background-color: rgb(100, 100, 100);
+    border-radius: 4px;
+    width: 100%;
+    min-width: 140px;
+    height: auto;
+    margin: auto;
+    padding: 0;
+    padding-top: 8px;
+    padding-bottom: 24px;
+    text-align: center;
+    vertical-align: top;
+    overflow: hidden;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+/* Bar container */
+.progress {
+    display: flex;
+	padding: 2px;
+    margin: auto;
+    background-color: rgba(41, 41, 41, 0.6);
+    border-radius: 20px;
+    border-color: rgba(83, 83, 83, 0.6);
+    border-style: solid;
+    box-shadow:0 1px 0 rgba(255,255,255,.03),inset 0 1px 0 rgba(0,0,0,.1);
+}
+.progress.v {
+	height: 300px;
+    width: 4px;
+    flex-direction: column-reverse;
+}
+.progress.h {
+    height: 4px;
+    width: 90%;
+    flex-direction: row-reverse;
+}
+/* Bar meter */
+.bar {
+    display: block;
+    width: auto;
+    border-style: none;
+    background-color: #ffca81;
+	border-radius: 20px;
+    padding: 0px;
+    margin: auto;
+    box-shadow: 0px 0px 10px 1px rgba(255, 136, 0, 0.4); /* Overridden in js*/
+
+	-webkit-transition: all 0.75s ease-out;
+	-moz-transition: all 0.75s ease-out;
+	-ms-transition: all 0.75s ease-out;
+	-o-transition: all 0.75s ease-out;
+    transition: all 0.75s ease-out;
+}
+.bar.h {
+    align-self: flex-start;
+    width: 0%;
+    height: 100%;
+    margin-left: 0; /* Align bar to left */
+    line-height: 250%; /* To center it vertically */
+}
+.bar.v {
+    align-self: flex-end;
+    width: 100%;
+    height: 0%;
+    margin: auto;
+    margin-bottom: 0px;
+}
+/* Button */
+.btn {
+    display: block;
+    background-color: rgb(100, 100, 100);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(145, 145, 145, 0.692);
+    width: auto;
+    height: auto;
+    margin: 0px;
+    padding: 8px;
+    text-align: center;
+    overflow: hidden;
+    box-sizing: content-box;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12) !important;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+    color: rgb(211, 211, 211);
+    font-size: 12pt;
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: nowrap;
+    cursor: pointer;
+	-webkit-transition: all 0.2s ease-out;
+	-moz-transition: all 0.2s ease-out;
+	-ms-transition: all 0.2s ease-out;
+	-o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+.btn:hover {
+    background-color: rgb(54, 54, 54);
+}
+.btn:active {
+    border-color: #00b7ff;
+}
+
+/* Responsive */
+@media only screen and (max-width: 810px), all and (orientation: portrait) {
+    /* For mobile phones: */
+    h1 {
+        font-size: 34pt;
+        margin: auto;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+    .info {
+        width: 90%;
+        margin: auto;
+        font-size: 14pt;
+    }
+    button {
+        font-size: 14pt;
+    }
+    #app {
+        display: flex;
+        flex-direction: column;
+    }
+}
