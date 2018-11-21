@@ -230,47 +230,6 @@ button:hover {
         margin: auto;
         margin-bottom: 0px;
     }
-
-    .curve-bar-container {
-        display: inline-block;
-        width: auto;
-        height: auto;
-        margin: auto;
-        text-align: center;
-        color: #d8d8d8;
-        transform-origin: center;
-    
-        backface-visibility: hidden;
-        transform: translateZ(0) scale(1.0, 1.0);
-    }
-    .curve-bar-crop { 
-        overflow: hidden;
-        width: 200px;
-        height: 70px;
-        padding-top: 14px;
-        margin-bottom: -14px;
-    }
-    .curve-bar {
-        margin: auto;
-        width: 150px;
-        height: 150px;
-        outline: 0;
-        border-radius: 50%;
-        box-sizing: border-box;
-        border: 24px solid rgb(128, 128, 128);
-        border-bottom-color: white;
-        border-right-color: white;
-        box-shadow: 0px 0px 6px 1px rgba(255, 255, 255, 0.85);
-        /* Prevents dark edge around bar when at rest */
-        filter: blur(0);
-        -webkit-filter: blur(0);
-        /* Swing animation transition */
-        -webkit-transition: all 0.75s ease-out;
-        -moz-transition: all 0.75s ease-out;
-        -ms-transition: all 0.75s ease-out;
-        -o-transition: all 0.75s ease-out;
-        transition: all 0.75s ease-out;
-    }
 /* Curved Progress Bar */
 .curve-bar-container {
     display: inline-block;
