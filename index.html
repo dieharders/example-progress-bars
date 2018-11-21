@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>CSS Bars</title>
+    <title>JS Bars</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
   </head>
@@ -11,9 +11,9 @@
     <div class="title">
       <div class="info">
         <div style="display: inline-block; width: 64px; height: 64px; vertical-align: top; margin: 4px;"><img src="./icon.svg" width="64px" height="64px"></div>
-        <h1>CSS Bars</h1>
+        <h1>JS Bars</h1>
         <br>
-        <span class="plate">Test drive CSS Progress Bars with a sample. More documentation <a href="https://www.w3schools.com/howto/howto_js_progressbar.asp" target="_blank">here</a>.</span>
+        <span class="plate">Test drive Javascript Progress Bars with a sample. More documentation <a href="https://www.w3schools.com/howto/howto_js_progressbar.asp" target="_blank">here</a>.</span>
         <div style="float: right; margin: 8px;">
           <button onclick="goGitHub(this)" title='https://github.com/dieharders/example-css-bars'>👁️ View on GitHub</button>
         </div>
@@ -23,28 +23,28 @@
     <div id="app">
 
       <div class="statContainer" style="grid-area: x">
-        <div class="barTitle">Horizontal - Full</div>
+        <div class="barTitle">Horizontal Straight Bar</div>
         <div class="progress h">
           <div class="bar h" id="myBarHorFull"><div class="barPercentText">0%</div></div>
         </div>
       </div>
 
       <div class="statContainer">
-        <div class="barTitle">Vertical - Low</div>
+        <div class="barTitle">Vertical Bar 1</div>
         <div class="progress v">
           <div class="bar v" id="myBarVertLow"><div class="barPercentText">0%</div></div>
         </div>
       </div>
 
       <div class="statContainer">
-        <div class="barTitle">Vertical - Half</div>
+        <div class="barTitle">Vertical Bar 2</div>
         <div class="progress v">
           <div class="bar v" id="myBarVertHalf"><div class="barPercentText">0%</div></div>
         </div>
       </div>
 
       <div class="statContainer">
-        <div class="barTitle">Vertical - Full</div>
+        <div class="barTitle">Vertical Bar 3</div>
         <div class="progress v">
           <div class="bar v" id="myBarVertQuarter"><div class="barPercentText">0%</div></div>
         </div>
@@ -57,6 +57,14 @@
         <div class="btn" onclick="changeProgress(1)" title="+1%">+</div>
         <div class="btn" onclick="resetProgress()" title="Reset to default">Reset</div>
         <div class="btn" onclick="changeProgress(-1)" title="-1%">-</div>
+      </div>
+
+      <div class="statContainer curve-bar-container">
+        <div class="barTitle">Throttle Bar</div>
+        <div class="curve-bar-crop">
+          <div class="curve-bar" id="curvedBar"></div>
+        </div>
+        <span>0</span>%
       </div>
 
     </div>
