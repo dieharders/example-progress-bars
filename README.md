@@ -1,5 +1,5 @@
 # Example Progress Bars
-An interactive example of CSS bars.
+An interactive example of progress bars made with CSS & JS.
 
 ## Live Demo: https://example-progress-bars.web.app/
 
@@ -8,4 +8,4 @@ An interactive example of CSS bars.
 - Text beside bar displaying the progress value.
 - A few buttons that change the progress bar values.
 
-![Preview](https://github.com/dieharders/example-css-bars/blob/master/preview.png)
+![Preview](https://github.com/dieharders/example-progress-bars/blob/master/preview.png)
