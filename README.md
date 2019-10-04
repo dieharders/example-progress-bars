@@ -1,7 +1,7 @@
-# CSS Grid
+# Example Progress Bars
 An interactive example of CSS bars.
 
-## Live Demo: https://example-css-bars.firebaseapp.com/
+## Live Demo: https://example-progress-bars.web.app/
 
 ## What it does:
 - Animated progress bars both vertical and horizontal.
